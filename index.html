@@ -395,6 +395,78 @@
     font-weight: 700;
   }
 
+  /* ===== PROFILE ===== */
+  .profile {
+    padding: 80px 24px;
+    background: var(--cream);
+    text-align: center;
+  }
+
+  .profile-inner { max-width: 640px; margin: 0 auto; }
+
+  .profile-card {
+    background: white;
+    border-radius: 24px;
+    padding: 40px 32px;
+    margin-top: 40px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+    text-align: left;
+    display: flex;
+    gap: 28px;
+    align-items: flex-start;
+  }
+
+  @media (max-width: 560px) {
+    .profile-card {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 32px 24px;
+    }
+  }
+
+  .profile-photo {
+    width: 110px; height: 110px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--green-pale), var(--green-light));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 44px;
+    flex-shrink: 0;
+    overflow: hidden;
+  }
+
+  .profile-photo img {
+    width: 100%; height: 100%;
+    object-fit: cover;
+    object-position: center 22%;
+  }
+
+  .profile-name {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--green-deep);
+    margin-bottom: 4px;
+  }
+
+  .profile-role {
+    font-size: 13px;
+    color: var(--text-light);
+    letter-spacing: 1px;
+    margin-bottom: 18px;
+  }
+
+  .profile-text {
+    font-size: 14px;
+    color: var(--text-mid);
+    line-height: 2;
+    margin-bottom: 14px;
+  }
+
+  .profile-text:last-child { margin-bottom: 0; }
+
   /* ===== TRIAL ===== */
   .trial {
     background: linear-gradient(135deg, var(--green-pale), var(--cream));
@@ -684,7 +756,7 @@
   </h1>
   <p class="hero-subtitle">
     あなたのリズムに合わせて選べる、<br>
-    オンラインヨガ習慣。7月スタート。
+    オンラインヨガ習慣。9月スタート。
   </p>
   <div class="hero-icons">
     <div class="hero-icon-item">
@@ -698,9 +770,9 @@
     </div>
   </div>
   <div class="hero-cta">
-    <a href="#line-cta" class="nav-btn">まず、無料で体験する</a>
+    <a href="#line-cta" class="btn-primary">まず、無料で体験する</a>
   </div>
-  <p class="hero-note">朝ヨガ：6/23〜6/30／おやすみヨガ：6/23・25・30　無料体験受付中</p>
+  <p class="hero-note">朝ヨガ：8/22〜8/31／おやすみヨガ：毎週 火・木 いつでも1回　無料体験受付中</p>
 </section>
 
 <!-- RESULTS -->
@@ -723,6 +795,30 @@
   </div>
 </section>
 
+<!-- PROFILE -->
+<section class="profile">
+  <div class="profile-inner reveal">
+    <p class="section-label-dark">INSTRUCTOR</p>
+    <h2 class="section-title-dark">お伝えしているのは<br>こんな人間です</h2>
+    <div class="profile-card">
+      <div class="profile-photo"><img src="profile.jpg" alt="自然派癒しヨガトレーナー 小泉智香子"></div>
+      <div class="profile-body">
+        <div class="profile-name">小泉 智香子</div>
+        <div class="profile-role">自然派癒しヨガトレーナー ／ ヨガ歴22年</div>
+        <p class="profile-text">
+          「自分の体は、自分で整えられる」をテーマに、マタニティの方から高齢者の方まで、幅広い年代の指導をしてきました。
+        </p>
+        <p class="profile-text">
+          私自身、体と心が疲れきってしまった時期があります。そこから戻ってこられたのは、毎日少しずつ、自分の体に触れる時間を持てたからでした。
+        </p>
+        <p class="profile-text">
+          だから、朝10分・夜15分にしています。がんばらなくていい長さから、始めてください。
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- PLANS -->
 <section class="plans">
   <div class="plans-inner">
@@ -737,7 +833,7 @@
         <div class="plan-header-morning">
           <div class="plan-emoji">☀️</div>
           <div class="plan-name-morning">朝ヨガ習慣<br>30日チャレンジ</div>
-          <div class="plan-time-morning">毎朝 6:00〜 / 10分　7月スタート</div>
+          <div class="plan-time-morning">毎朝 6:00〜 / 10分　9月スタート</div>
         </div>
         <div class="plan-body">
           <div class="plan-tag">新規の方・初月限定</div>
@@ -765,6 +861,7 @@
           <ul class="plan-features">
             <li>おやすみ15分ヨガ（火・木）</li>
             <li>おやすみ60分ヨガ（第1・3日曜）</li>
+            <li>年払い可能（1ヶ月分無料）</li>
           </ul>
         </div>
       </div>
@@ -788,7 +885,7 @@
         <div class="trial-card-emoji">☀️</div>
         <div class="trial-card-title">朝ヨガ 無料体験</div>
         <div class="trial-card-dates">
-          <strong>6/23（火）〜6/30（火）</strong><br>
+          <strong>8/22（土）〜8/31（月）</strong><br>
           毎朝 6:00〜 約10分<br>
           オンライン（Zoom）
         </div>
@@ -797,8 +894,9 @@
         <div class="trial-card-emoji">🌙</div>
         <div class="trial-card-title">おやすみヨガ 無料体験</div>
         <div class="trial-card-dates">
-          <strong>6/23（火）・6/25（木）・6/30（火）</strong><br>
+          <strong>毎週 火曜・木曜</strong><br>
           21:30〜 約15分<br>
+          ご都合のいい日に1回<br>
           オンライン（Zoom）
         </div>
       </div>
@@ -851,7 +949,7 @@
 <section class="cta-section" id="line-cta">
   <div class="reveal">
     <h2 class="cta-title">
-      7月から、<br>
+      9月から、<br>
       整える習慣を始めませんか？
     </h2>
     <p class="cta-desc">
@@ -869,7 +967,7 @@
 <!-- FOOTER -->
 <footer>
   <p>🌿 自然派癒しヨガ</p>
-  <p style="margin-top:8px;">© 2025 Natural Healing Yoga. All rights reserved.</p>
+  <p style="margin-top:8px;">© 2026 Natural Healing Yoga. All rights reserved.</p>
 </footer>
 
 <script>
